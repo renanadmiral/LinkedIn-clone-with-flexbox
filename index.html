@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Project - LinkedIn</title>
+
+  <!-- Applying reset on standard css -->
+  <link rel="stylesheet" href="reset.css">
+
+  <!-- Importing Ropa Sans font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rambla:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS import -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Page's Header, only navigation bar is here -->
+  <header>
+    <nav>
+      <div id="nav-left">
+        <!-- linkedin home logo -->
+        <div id="home-logo">
+          <a href="">
+            <img src="./assets/linkedin.jpg" alt="Home Logo">
+          </a>
+        </div>
+        <!-- searchbox -->
+        <form class="search-box">
+            <label for="search"><img src="./assets/loupe.png" alt=""></label>
+            <input type="search" placeholder="Pesquisar" id="search">
+        </form>
+      </div>
+      <!-- link list -->
+      <ul>
+        <li class="opaque">
+          <a class="f-column" href="">
+            <div class="icon-height">
+              <img src="./assets/home-icon-silhouette.png" alt="Home Icon">
+            </div>
+            Início
+          </a>
+        </li>
+        <li class="opaque">
+          <a class="f-column" href="">
+            <div class="icon-height">
+              <img src="./assets/group-of-three-men-standing-side-by-side-hugging-each-other.png" alt="Network Icon">
+            </div>
+            Minha Rede
+          </a>
+        </li>
+        <li class="opaque">
+          <a class="f-column" href="">
+            <div class="icon-height">
+              <img src="./assets/portfolio.png" alt="Vacancy Logo">
+            </div>
+            Vagas
+          </a>
+        </li>
+        <li class="opaque">
+          <a class="f-column" href="">
+            <div class="icon-height">
+              <img src="./assets/chat.png" alt="Message Logo">
+            </div>
+            Mensagens
+          </a>
+        </li>
+        <li class="opaque">
+          <a class="f-column" href="">
+            <div class="icon-height">
+              <img src="./assets/bell.png" alt="Notification Logo">
+            </div>
+            Notificações
+          </a>
+        </li>
+      </ul>
+      <a class="f-column opaque" href="">
+        <div class="icon-height">
+          <img class="profile-pic-rounded" src="./assets/profile-picture.png" alt="My Logo">
+        </div>
+        Eu
+      </a>
+    </nav>
+  </header>
+
+  <!-- Main content, all profile boxes are here -->
+  <main>
+    <!-- First layer: Profile img, background and description -->
+    <section id="profile-layer">
+      <!-- profile images -->
+      <article id="profile-n-bckg-img">
+        <div id="profile-img">
+          <a href="">
+            <img src="./assets/profile-picture.png" alt="Profile img" class="profile-pic-rounded">
+          </a>
+        </div>
+      </article>
+      <!-- profile description -->
+      <article id="description-box">
+        <h1>Renan Admiral Vieira Gonçalves</h1>
+        <h2>Desenvolvedor Front-end - Aluno na poliUFRJ - Bolsista Santander na Let's Code</h2>
+        <span>Nova Iguaçu, Rio de Janeiro, Brasil</span>
+        <div class="button-box">
+          <div><button id="blue-btn">Tenho interesse em...</button></div>
+          <div><button>Adicionar seção</button></div>
+          <div><button>Mais</button></div>
+        </div>
+      </article>
+    </section>
+    <!-- second layer: jobs and academic experiences -->
+    <section id="skills-layer">
+      <!-- job experiences -->
+      <article id="exp-article" class="separator">
+        <h3>Experiência</h3>
+        <div class="flex-article">
+          <div class="article-img"><img src="./assets/unknown-logo.png" alt="Unknown logo"></div>
+          <div class="article-text separator">
+            <h4>Auxiliar Técnico - Telecomunicações</h4>
+            <h5>Turbo5 do Brasil Eireli ME - Tempo integral</h5>
+            <span>jan. de 2019 - abr. de 2019 (4 meses)</span>
+            <span>Seropédica, Rio de Janeiro, Brasil</span>
+            <p>(Texto de descrição das atividades realizadas)</p>
+          </div>
+        </div>
+        <div class="flex-article">
+          <div class="article-img"><img src="./assets/unknown-logo.png" alt="Unknown logo"></div>
+          <div class="article-text">
+            <h4>Estagiário</h4>
+            <h5>Assessoria Jurídica Aécio Ladeira Baptista</h5>
+            <span>jan. de 2018 - dez. de 2019 (1 ano)</span>
+            <span>Nova Iguaçu, Rio de Janeiro, Brasil</span>
+            <p>(Texto de descrição das atividades realizadas)</p>
+          </div>
+        </div>
+      </article>
+      <!-- academic experiences -->
+      <article id="academic-article">
+        <h3>Formação acadêmica</h3>
+        <div class="flex-article">
+          <div class="article-img"><img src="./assets/ufrj-img.jfif" alt="UFRJ logo"></div>
+          <div class="article-text">
+            <h4>Escola Politécnica da UFRJ</h4>
+            <h5>MBA em Engenharia de Software</h5>
+            <span>2021 - 2022</span>
+          </div>
+        </div>
+        <div class="flex-article">
+          <div class="article-img"><img src="./assets/lets-code-img.jfif" alt=""></div>
+          <div class="article-text">
+            <h4>Let's Code</h4>
+            <h5>Desenvolvimento Full Stack</h5>
+            <span>2021 - 2022</span>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

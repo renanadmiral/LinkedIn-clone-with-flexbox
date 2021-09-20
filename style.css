@@ -1,0 +1,246 @@
+:root {
+    --nav-bar-height: 5vh;
+    --search-box-bg-color: #eef3f7;
+    --nav-icon-height: 2.72vh;
+}
+
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 8vh;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Ropa Sans", sans-serif;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    max-width: 1440px;
+}
+
+#nav-left {
+    display: flex;
+}
+
+#home-logo {
+    height: var(--nav-bar-height);
+    margin-right: 2vw;
+}
+
+img {
+    height: 100%;
+}
+
+.search-box {
+    display: flex;
+}
+
+.search-box input {
+    border: none;
+    background-color: var(--search-box-bg-color);
+    border-radius: 0 5px 5px 0;
+    width: 20vw;
+}
+
+.search-box label {
+    display: flex;
+    align-items: center;
+    background-color: var(--search-box-bg-color);
+    cursor: text;
+    padding: 0 15px;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-box img {
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin: 0 1.5vw;
+}
+
+.f-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.opaque {
+    filter: opacity(70%);
+}
+
+.opaque:hover {
+    filter: opacity(100%);
+}
+
+.icon-height {
+    height: var(--nav-icon-height);
+    margin-bottom: 0.5vh;
+}
+
+.profile-pic-rounded {
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Rambla", sans-serif;
+    background-color: #f3f2ee;
+    padding: 50px 0;
+    font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span {
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+
+main span {
+    display: block;
+    color: #666666;
+}
+
+section {
+    background-color: white;
+    width: 90vw;
+    margin: 0 5vw;
+    max-width: 1440px;
+}
+
+#profile-layer {
+    margin-bottom: 50px;
+}
+
+#profile-n-bckg-img {
+    background-image: url(./assets/lorem-ipsum.jpg);
+    background-position-x: center;
+    background-position-y: 47.5%;
+}
+
+#profile-img {
+    height: 150px;
+    transform: translate(0, 25%);
+    margin-left: 4vw;
+}
+
+#description-box {
+    padding: 60px 2vw 30px 2vw;
+    font-size: 17px;
+}
+
+#description-box h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#description-box h2 {
+    font-size: 20px;
+}
+
+.button-box {
+    margin-top: 25px;
+}
+
+.button-box div {
+    display: inline-block;
+    margin-right: 2vw;
+}
+
+.button-box button {
+    --btn-padding: 8px 20px;
+    padding: var(--btn-padding);
+    border-radius: 20px;
+    background: white;
+    border: #666666 solid 1px;
+    color: #666666;
+    font-weight: bold;
+    transition-property: border, background-color, padding;
+    transition-duration: 0.1s;
+}
+
+.button-box button:hover {
+    border: #666666 solid 2px;
+    background-color: lightgrey;
+    padding: 7px 19px;
+}
+
+#blue-btn {
+    background-color: #0b65c2;
+    color: white;
+    border: none;
+    padding: var(--btn-padding);
+}
+
+#blue-btn:hover {
+    background-color: #004b7c;
+}
+
+#exp-article {
+    padding: 30px 0 0 2vw;
+}
+
+#academic-article {
+    padding: 30px 0 30px 2vw;
+}
+
+#skills-layer h3 {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.flex-article {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.flex-article:hover {
+    text-decoration: underline #0a66c2;
+    cursor: pointer;
+}
+
+.article-img {
+    height: 70px;
+    margin-right: 3vw;
+}
+
+.article-text {
+    width: 100%;
+}
+
+.article-text h4 {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.article-text h5 {
+    font-weight: bold;
+}
+
+.article-text p {
+    margin: 20px 0;
+}
+
+.separator {
+    border-bottom: #ebebeb solid 2px;
+}
